@@ -10,13 +10,11 @@
       accusamus assumenda dignissimos, officia tempora sequi ut eum at nulla.
     </p>
     <div>{{ data }}</div>
-    <div>KEY{{ currencyKey }}</div>
   </div>
 </template>
 
 <script setup>
 const { data } = await useFetch("/api/currency/USD");
-const currencyKey = useRuntimeConfig();
 </script>
 
 <style scoped>
